@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/*flex container*/
+#sport-container{
+    background: #f8f8f8;
+    padding:35px;
+    display: flex;
+    justify-content: space-evenly; /*main axis*/
+    align-items: center; /*cross axis*/
+}
+
+/*flex items: shared styles for sections*/
+.sport{
+    width: 320px;
+    background: linear-gradient(135deg, #90f7ce 10%, #32ccbc 100%);
+}
+
+.basketball, .football, .golf{
+    padding:25px;
+}
+
+.basketball h2, .football h2, .golf h2{
+    margin-bottom: 10px;
+}
+
+.basketball p, .football p, .golf p{
+    line-height:1.6;
+}
